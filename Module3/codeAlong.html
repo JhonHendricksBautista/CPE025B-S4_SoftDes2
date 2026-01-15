@@ -3,20 +3,22 @@
   <head>
     <title>WebDev Solutions</title>
     <link rel="icon" href="/icon.png" type="image/png">
+    </style>
   </head>
   
   <body>
     <header>
-      <h1>Welcome to WebDev Solutions</h1>
-         <nav>
-            <ul>
-               <li><a href="\home">Home</a></li>
-               <li><a href="\about">About</a></li>
-               <li><a href="\services">Services</a></li>
-               <li><a href="\contact">Contact</a></li>
-            </ul>
-         </nav>
+      <h1 style="margin-bottom: 10px;">Welcome to WebDev Solutions</h1>
+      <nav>
+        <ul>
+          <li><a href="\home">Home</a></li>
+          <li><a href="\about">About</a></li>
+          <li><a href="\services">Services</a></li>
+          <li><a href="\contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
       <article>
         <h2>Our Services</h2>
@@ -24,6 +26,7 @@
            development, and digital marketing. 
            Contact us to learn more!</p>
       </article>
+
       <article>
         <h2>Our Customers</h2>
         <p>Our customers are at the heart of everything we do. 
@@ -31,35 +34,67 @@
            and building strong relationships with each and every 
            one of our clients.</p>
       </article>
-    <article>
-      <h1>The Importance of Web Standards</h1>
-      <p>The web is built on <strong>standards</strong> to ensure <em>consistency</em> and <mark>accessibility</mark> for all users. Standards like HTML5 and CSS3 provide a foundation for building <abbr title="Accessible Rich Internet Applications">ARIA</abbr>-compliant sites that are accessible to individuals with disabilities.</p>
-      <p>According to <cite>World Wide Web Consortium (W3C)</cite>, adhering to web standards <q>ensures the long-term growth of the Web</q>. To create semantic markup, developers should use elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code> appropriately.</p>
-      <p>Learning web standards is crucial for <del>just developers</del> <ins>everyone involved in web development</ins>, from designers to content creators. Embrace these standards to make the web a better place for <a href="#">everyone</a>.</p>
-      <p>For more details, visit <a href="https://www.w3.org/standards/">W3C Standards</a>.</p>
-    </article>
 
+      <article>
+        <h1 style="color: #222;">The Importance of Web Standards</h1>
+        <p>
+          The web is built on <strong>standards</strong> to ensure 
+          <em>consistency</em> and 
+          <mark style="background-color: yellow;">accessibility</mark> for all users.
+          Standards like HTML5 and CSS3 provide a foundation for building
+          <abbr title="Accessible Rich Internet Applications">ARIA</abbr>-compliant sites.
+        </p>
+        <p>
+          According to <cite>World Wide Web Consortium (W3C)</cite>,
+          adhering to web standards <q>ensures the long-term growth of the Web</q>.
+        </p>
+        <p>
+          Learning web standards is crucial for 
+          <del>just developers</del> 
+          <ins>everyone involved in web development</ins>.
+        </p>
+        <p>
+          For more details, visit 
+          <a href="https://www.w3.org/standards/">W3C Standards</a>.
+        </p>
+      </article>
 
+      <div class="vcard">
+        <p class="fn"><strong>John Smith</strong></p>
+        <p class="title">Web Developer</p>
+        <p class="org">Smith Web Solutions</p>
+        <p class="tel">555-555-5555</p>
+        <a class="email" href="mailto:john@smithwebsolutions.com">
+          john@smithwebsolutions.com
+        </a>
+        <p class="adr">
+          <span class="street-address">123 Main St.</span><br>
+          <span class="locality">Anytown</span>, 
+          <span class="region">CA</span> 
+          <span class="postal-code">12345</span>
+        </p>
+      </div>
 
-    <div class="vcard">
-    <p class="fn">John Smith</p>
-    <p class="title">Web Developer</p>
-    <p class="org">Smith Web Solutions</p>
-    <p class="tel">555-555-5555</p>
-    <a class="email" href="mailto:john@smithwebsolutions.com">john@smithwebsolutions.com</a>
-    <p class="adr">
-        <span class="street-address">123 Main St.</span><br>
-        <span class="locality">Anytown</span>, <span class="region">CA</span> <span class="postal-code">12345</span>
-    </p>
-    </div>
-    <button role="button">Click me</button>
-    <a href="#" role="link">Read more</a>
-    <h2 role="heading">Important Information</h2>
+      <!-- Inline style example on a button -->
+      <button role="button" style="margin-top: 15px; padding: 10px 15px;">
+        Click me
+      </button>
 
+      <a href="#" role="link" style="display: inline-block; margin-left: 10px;">
+        Read more
+      </a>
 
-    
-    <iframe src="https://youtu.be/J7Xzgcu6vVk?si=7IXCwHzDEcpjOMo3" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <h2 role="heading">Important Information</h2>
+
+      <iframe 
+        src="https://youtu.be/J7Xzgcu6vVk?si=7IXCwHzDEcpjOMo3"
+        width="560"
+        height="315"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
     </main>
+
     <footer>
       <p>© 2023 WebDev Solutions. All Rights Reserved.</p>
     </footer>
