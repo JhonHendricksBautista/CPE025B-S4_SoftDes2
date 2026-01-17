@@ -2,32 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sunnydale School</title>
+    <title>OhioSkool University</title>
+    <link rel="icon" type="image/png" href="/HOA2.1/school.png">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fc;
+            color: #333;
+            line-height: 1.6;
         }
 
         .header {
-            background-color: #818182;
+            background-color: #0a3d62;
             color: white;
-            padding: 20px 40px;
+            padding: 15px 50px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
+            align-items: center;
         }
 
         .logo {
@@ -37,77 +34,320 @@
         }
 
         .logo img {
-            width: 100px;
-            height: auto;
+            width: 60px;
         }
-        
 
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #1E90FF;
+        .logo h1 {
+            font-size: 22px;
+            color: #ffffff;
         }
-        h2 {
-            margin-top: 20px;
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
         }
-        #mission-statement {
-            color: #32CD32;
+
+        nav a:hover {
+            text-decoration: underline;
         }
-        #upcoming-events {
-            color: #FFA07A;
-            background-color: #FFFFE0;
+
+        .intro {
+            height: 70vh;
+            background-image: url("/HOA2.1/campus.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
-        #contact {
-            color: #20B2AA;
+
+        .intro::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(10, 61, 98, 0.65);
         }
-        .outdoor {
-            background-color: #AFEEEE;
-            padding: 5px;
+
+        .intro-content {
+            position: relative;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
         }
-        .date {
-            font-weight: bold;
-            color: red;
+
+        .intro-content h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
         }
+
+        .intro-content p {
+            max-width: 600px;
+            font-size: 18px;
+        }
+
+
         .section {
-            background-color: #f8f3f3;
-            padding: 10px;
+            padding: 60px 80px;
+            background-color: white;
+        }
+
+        .section h3 {
+            font-size: 28px;
+            color: #0a3d62;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 60px 80px;
+            background-color: #f4f8fc;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h3 {
+            font-size: 28px;
+            color: #0a3d62;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            max-width: 600px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .about-media {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-media video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .vm-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .vm-box {
+            background-color: #eaf3fb;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .vm-box h4 {
+            color: #1e6fa8;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+
+        .programs-horizontal {
+            display: flex;
+            gap: 25px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+
+        .program-card {
+            min-width: 280px;
+            background-color: #eaf3fb;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            margin: 30px;
+        }
+
+        .program-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .program-card h4 {
+            color: #1e6fa8;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .program-card p {
+            font-size: 15px;
+            color: #444;
+        }
+
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            padding: 30px;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-        <div class="header">
+
+    <div class="header">
         <div class="logo">
-            <img src="/HOA2.1/school.jpg" alt="Logo">
-            <h1>OhioSkool</h1>
+            <img src="/HOA2.1/school.png" alt="Logo">
+            <h1>OhioSkool University</h1>
         </div>
 
         <nav>
             <a href="#">Home</a>
-            <a href="#">Recipes</a>
+            <a href="#">Programs</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
     </div>
 
-<h1>Sunnydale School</h1>
-<p>Welcome to Sunnydale School, dedicated to fostering a love of learning in every student.</p>
-    
-<h2 id="mission-statement">Mission Statement</h2>
-<p>Our mission is to provide a quality education that prepares all children for a successful future.</p>
-    
-<h2 id="upcoming-events">Upcoming Events</h2>
-<ul>
-    <li>Science Fair - <span class="date">June 10</span></li>
-    <li class="outdoor" title="Event Type: Outdoor">Art Exhibition - <span class="date">June 15</span></li>
-    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Sports Day - <span class="date">June 20</span></li>
-</ul>
+    <section class="intro">
+        <div class="intro-content">
+            <h2>Engineering the Future</h2>
+            <p>
+                OhioSkool University is a center of excellence in engineering,
+                technology, and innovation preparing students to lead in a
+                rapidly evolving digital world.
+            </p>
+        </div>
+    </section>
 
-<div class="section">
-<h2 id="contact">Contact Us</h2>
-<p title="Email us at info@sunnydaleschool.com">Email: info@sunnydaleschool.com</p>
-<p title="Call us at 555-1234">Phone: 555-1234</p>
-<!-- Imagine clicking here shows a message: 'Thanks for reaching out!' -->
-</div>
+
+    <section class="about">
+        <div class="about-content">
+            <h3>About OhioSkool University</h3>
+            <p>
+                Established in 1920, OhioSkool University has stood the test of time as
+                a premier institution dedicated to shaping bright minds and advancing
+                knowledge. It has helped develop a strong foundation
+                in engineering and technology in which it fosters the communities 
+                lead in innovation, research and academics.
+            </p>
+            <p>
+                Both locally and internationally, the
+                institution has proven its competennce in various fields and contiously delivers
+                quality eduacation for all.Through industry-aligned programs and a commitment to 
+                lifelong learning,
+                OhioSkool empowers students to become problem-solvers, innovators, and
+                future leaders in a rapidly evolving world.
+            </p>
+        </div>
+
+        <div class="about-media">
+            <video controls>
+                <source src="/HOA2.1/univtour.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="vm-container">
+            <div class="vm-box">
+                <h4>Our Vision</h4>
+                <p>
+                    To be a leading institution in engineering and technology
+                    education, producing globally competitive innovators,
+                    researchers, and problem-solvers who drive technological
+                    advancement and societal progress.
+                </p>
+            </div>
+
+            <div class="vm-box">
+                <h4>Our Mission</h4>
+                <p>
+                    OhioSkool University is committed to delivering high-quality
+                    engineering and technology education through hands-on learning,
+                    research-driven instruction, and industry-aligned programs that
+                    equip students with technical expertise, critical thinking, and
+                    ethical responsibility.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Academic Programs</h3>
+
+        <div class="programs">
+            <div class="program-card">
+                <h4>Computer Engineering</h4>
+                <p>
+                    Focuses on the design and development of computer systems,
+                    hardware-software integration, embedded systems, and intelligent technologies.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h4>Electrical Engineering</h4>
+                <p>
+                    Emphasizes power systems, electronics, control systems, and
+                    sustainable energy solutions for modern industries.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h4>Mechanical Engineering</h4>
+                <p>
+                    Develops expertise in machine design, automation, robotics,
+                    and advanced manufacturing technologies.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h4>Information Technology</h4>
+                <p>
+                    Covers software development, cybersecurity, data analytics,
+                    and network infrastructure in a digital-driven world.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h4>Civil Engineering</h4>
+                <p>
+                    Prepares students to design, build, and maintain
+                    sustainable infrastructure and smart cities.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h4>Artificial Intelligence & Data Science</h4>
+                <p>
+                    Explores machine learning, data modeling, and intelligent
+                    systems powering future technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: info@ohioskool.edu | Phone: 6666-7777</p>
+        <p>© 2026 OhioSkool University. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
