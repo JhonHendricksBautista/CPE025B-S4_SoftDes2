@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #0b1c2d;
+    color: #e6edf5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #081523;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav a {
+    color: #cfd8e3;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    min-height: 90vh;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #0b1c2d, #102a44);
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-content h1 span {
+    color: #7aa2ff;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: #7aa2ff;
+    margin: 25px 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 420px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    text-decoration: none; 
+
+}
+
+.btn.primary {
+    background-color: #7aa2ff;
+    border: none;
+    color: #081523;
+}
+
+.btn.primary:hover {
+    background-color: #5f89e6;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #7aa2ff;
+    color: #7aa2ff;
+}
+
+.content {
+    padding: 80px 60px;
+    background-color: #0b1c2d;
+}
+
+.content section {
+    margin-bottom: 50px;
+}
+
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #7aa2ff;
+}
+
+p {
+    font-size: 20px;
+
+}
+
+.projects {
+    margin-top: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.project-card {
+    background-color: #102a44;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.project-card p {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    color: #e6edf5;
+}
+
+a {
+    color: #7aa2ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #081523;
+    color: #9fb3c8;
+}
