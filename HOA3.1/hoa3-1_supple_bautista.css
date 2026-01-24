@@ -1,0 +1,92 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ec;
+    color: #3e3e3e;
+}
+
+.hero {
+    height: 60vh;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+section {
+    margin: 40px;
+    padding: 25px;
+    background-color: white;
+    border-left: 6px solid #4e6b3c;
+}
+
+h2 {
+    color: #4e6b3c;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-card {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #6b4f3f;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    color: #e6e2d8;
+}
+
+footer a {
+    color: #d8f3dc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
