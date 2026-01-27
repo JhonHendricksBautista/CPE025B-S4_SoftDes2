@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Lato', sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#333;
+}
+
+nav{
+    background:#777;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:white;
+}
+
+.nav-icons i{
+    color:white;
+    font-size:20px;
+    margin-left:20px;
+    cursor:pointer;
+}
+
+.hero{
+    height:400px;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("intro.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:20px 40px;
+    border-radius:10px;
+}
+
+.info-section{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+}
+
+.info-box{
+    background:#e0d6cc;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.info-box h3{
+    margin-bottom:10px;
+    color:#5a3e2b;
+}
+
+.products{
+    padding:50px;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:30px;
+    color:#5a3e2b;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:15px;
+}
+
+.card-body h4{
+    margin-bottom:10px;
+}
+
+.card-body button{
+    background:red;
+    color:white;
+    border:none;
+    margin-top: 5px;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card-body button:hover{
+    background:darkred;
+}
+
+
+.login-section{
+    display:flex;
+    justify-content:center;
+    padding:50px;
+}
+
+.login-box{
+    background:white;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.login-box h3{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.login-box button{
+    width:100%;
+    background:#5a3e2b;
+    color:white;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#3f2b1f;
+}
+
+
+footer{
+    background:#777;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
