@@ -1,0 +1,170 @@
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: #0F172A;
+    color: #E2E8F0;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1E293B;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: 700;
+    color: #3B82F6;
+}
+
+nav a {
+    color: #E2E8F0;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3B82F6;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 8%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 2.8rem;
+    color: #3B82F6;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    max-width: 500px;
+    color: #CBD5E1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1D4ED8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3B82F6;
+}
+
+.hero-image img {
+    width: 280px;
+    border-radius: 50%;
+    border: 5px solid #1D4ED8;
+}
+
+
+.projects-section {
+    padding: 100px 8%;
+    background-color: #1E293B;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #3B82F6;
+    font-size: 2rem;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+
+.project-card {
+    background-color: #0F172A;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+
+.project-card h3 {
+    color: #3B82F6;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #94A3B8;
+}
+
+.card-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-links a {
+    text-decoration: none;
+    color: #1D4ED8;
+    font-weight: 600;
+}
+
+.card-links a:hover {
+    color: #3B82F6;
+}
+
+
+footer {
+    background-color: #002157;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+
+header {
+    padding: 20px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar > li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00d8ff;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f1f1f;
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    color: #fff;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333;
+    color: #00d8ff;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.car-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: #00d8ff;
+}
+
+.card-content p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.card-content button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #00d8ff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-content button:hover {
+    background-color: #0099cc;
+}
+
+
+.vehicle-section {
+    padding: 40px 20px;
+}
+
+.vehicle-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #00d8ff;
+}
+
+
+.vehicle-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeIn 1s ease forwards;
+}
+
