@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Web Design</title>
+    <link rel="stylesheet" href="supple.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header class="header" role="banner">
+        <h1>Accessible Web Design</h1>
+    </header>
+
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul class="navigation-menu">
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+        <div class="content">
+            <aside class="sidebar">
+                <nav aria-labelledby="sidebar-heading">
+                    <h2 id="sidebar-heading">Accessibility Topics</h2>
+                    <ul class="resource-list">
+                        <li><a href="#semantic-html">Semantic HTML</a></li>
+                        <li><a href="#aria">ARIA Roles</a></li>
+                        <li><a href="#color-contrast">Color Contrast</a></li>
+                        <li><a href="#keyboard">Keyboard Navigation</a></li>
+                        <li><a href="#screen-readers">Screen Readers</a></li>
+                        <li><a href="#responsive">Responsive Design</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+        <main id="main-content" class="main-content" role="main">
+
+                <section class="about">
+                <h2>About Us</h2>
+
+                <figure>
+                    <img src="team.png" 
+                        alt="Team of web designers collaborating around">
+                    <figcaption>
+                        Our team working together to build inclusive digital experiences.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    We are dedicated to creating inclusive and accessible web designs that work for everyone.
+                </p>
+            </section>
+
+            <section class="features">
+                <h2>Accessibility Features</h2>
+                <ul class="feature-list">
+                    <li>Clear Navigation</li>
+                    <li>Identifiable Links</li>
+                    <li>Simple Layouts</li>
+                    <li>Readable Text</li>
+                    <li>Screen Reader Compatibility</li>
+                </ul>
+                <p>
+                    For more information, visit our 
+                    <a href="https://example.com" target="_blank" rel="noopener">
+                        Help Center (opens in new tab)
+                    </a>.
+                </p>
+            </section>
+
+            <section class="example">
+                <h2>Readable Text Example</h2>
+                <p>This is standard text with a readable font size and line height.</p>
+                <p class="large-text">This text is larger for improved visibility.</p>
+                <div class="high-contrast-text">
+                    This is high contrast text: black on white for better readability.
+                </div>
+            </section>
+
+        </main>
+    </div>
+    
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2050 Accessible Web Design</p>
+    </footer>
+
+</body>
+</html>
